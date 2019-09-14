@@ -1,0 +1,81 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $font-family;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: normal;
+  }
+}
+
+header,
+footer,
+nav,
+menu,
+article,
+aside,
+section,
+details,
+figcaption,
+figure{
+  display: block;
+}
+
+th{
+    font-weight: normal;
+}
+
+input,
+select,
+button,
+textarea{
+    box-sizing: border-box;
+}
+
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=number],
+input[type=submit],
+input[type=button],
+input[type=reset],
+textarea,
+button,
+select{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+}
+
+input[type=submit],
+input[type=button],
+input[type=reset],
+button,
+label[for]{
+    cursor: pointer;
+}
+
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance:textfield;
+}
